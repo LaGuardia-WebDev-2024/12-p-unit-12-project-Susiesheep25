@@ -9,7 +9,7 @@ Select ONE Additional
 [ no ] Feature 1 - Use .addClass() method
 [ no ] Feature 2 - Use a variable in javaScript 
 [ no ] Feature 3 - Use .mouseover() method
-[ this one - do so when title clicked it changes! ] Feature 4 - Use .show() method
+[ done] Feature 4 - Use .show() method
 [ no ] Feature 5 - Use .append() method
 -->
 
@@ -25,7 +25,8 @@ Select ONE Additional
     <button id="mem1-button">Memory #1</button>
     <button id="mem2-button">Memory #2</button>
     <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year!</span></h1>
+    <h1 id="head">My Top 3 Memories of <span>This Year!</span></h1>
+    <img id="pic" style="display:none"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqPQpdZ8EX3aaQma5d9pu_wn_EtVwR8Amgzg&s">
     <ol>
       <li>
         <h3 id="mem1">Memory #1</h3>
@@ -71,8 +72,9 @@ Select ONE Additional
       
       $("img").attr("border","5px solid");
       
-
-      
+       $("#head").click(function () {
+         $("#pic").show(2000)
+       });
     </script>
   </body>
 </html>
